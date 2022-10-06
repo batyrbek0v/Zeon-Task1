@@ -68,6 +68,11 @@ ol {
   border-right: 1.7px solid #E8E8E8;
 }
 
+.list li a {
+  text-decoration: none;
+  color: black;
+}
+
 .list li:nth-last-child(1) {
   border: none;
 }
@@ -99,6 +104,7 @@ ol {
 .bars {
   font-size: 20px;
 }
+
 /* NAV-END */
 
 /* HEADER-END */
@@ -128,6 +134,7 @@ ol {
   margin-top: 8px;
   line-height: 1.5rem;
 }
+
 /* MAIN-END */
 
 /* ====================================== */
@@ -152,6 +159,10 @@ ol {
   padding: 1rem;
 }
 
+.for-response {
+  display: none;
+}
+
 .contacts-block h2 {
   font-weight: 500;
   font-size: 24px;
@@ -172,6 +183,7 @@ ol {
   font-size: 18px;
   color: #0F2A59;
 }
+
 /* CONTACTS-END */
 
 /* FOOTER-MAP */
@@ -185,6 +197,7 @@ ol {
   height: 100%;
   border: none;
 }
+
 /* FOOTER-MAP-END */
 
 
@@ -225,10 +238,22 @@ ol {
 
   #footer-container {
     flex-direction: column;
+    gap: 20px;
   }
 
   .contacts-block {
     width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .for-response {
+    display: block;
+    margin-left: 20px;
+  }
+
+  .contacts-block h2 {
+    display: none;
   }
 
   .footer-map {
