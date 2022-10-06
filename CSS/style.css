@@ -38,9 +38,9 @@ ol {
 .logo h2 {
   font-style: normal;
   font-weight: 700;
-  font-size: 27px;
-  /* color: red; */
-  /* color: #0F2A59; */
+  font-size: 28px;
+  line-height: 42px;
+  color: #0F2A59;
 }
 
 .list-block {
@@ -180,6 +180,7 @@ ol {
 
 .content-top h2 {
   font-size: 28px;
+  font-weight: 600;
   line-height: 42px;
 }
 
@@ -299,38 +300,40 @@ ol {
   margin-right: 20px;
 }
 
-.cards-right img{
+.cards-right img {
   width: 106px;
   height: 106px;
-  object-fit:cover;
+  object-fit: cover;
 }
+
 /* NEWS-SECTION */
 .news-block {
   width: 100%;
   padding: 0 5.5rem;
   margin-top: 100px;
-  margin-left: 12px;
 }
 
 .news-main-title {
   width: 40%;
+  margin-left: 8px;
 }
 
 .news-main-title h2 {
   font-size: 28px;
-  color: red;
   margin: 4px 0 0 4px;
 }
 
 .news-cards-box {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 30px;
-  margin-top: 20px;
+  grid-gap: 20px;
+  margin-top: 24px;
+  margin-left: 10px;
 }
 
 .news-cards {
-  /* aspect-ratio: 3/; */
+  width: 268px;
+  height: 183px;
   transition: 0.3s ease-in-out;
 }
 
@@ -341,12 +344,35 @@ ol {
 
 .news-cards:nth-child(1) {
   width: 568px;
-  height: 383px;
+  height: 385px;
   grid-column: 1/3;
   grid-row: 1/5;
   background: url(/IMG/news-worker1.png) center / cover;
-  /* background-repeat: no-repeat; */
-  /* background-size: contain; */
+  border: 1px solid white;
+
+}
+
+.news-cards:nth-child(1) .news-card-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.38rem 1rem;
+  color: white;
+  border: 1px solid white;
+  line-height: 20px;
+}
+
+.news-cards:nth-child(1) .news-card-content p {
+  font-size: 14px;
+  margin-left: 0.45rem;
+  line-height: 2;
+}
+
+.news-cards:nth-child(1) .news-card-content h3 {
+  font-size: 20px;
+  line-height: 25px;
+  margin-left: 0.45rem;
 }
 
 .news-cards:nth-child(2) {
@@ -366,25 +392,24 @@ ol {
 }
 
 .news-card-content {
-  display: flex;
   height: 100%;
+  display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 1rem;
-  color: white;
-  line-height: 20px;
+  padding: 12px;
+  color: red;
 }
 
 .news-card-content h3 {
-  margin-top: 4px;
   font-size: 20px;
-  line-height: 28px;
+  line-height: 18px;
 }
 
 .news-card-content p {
-  font-size: 14px;
-  line-height: 1.5;
+  font-size: 11px;
+  line-height: 18px;
 }
+
 
 /* NEWS-SECTION-END */
 
