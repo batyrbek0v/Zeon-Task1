@@ -143,24 +143,25 @@ ol {
 #footer-container {
   width: 100%;
   display: flex;
-  justify-content: center;
-  padding: 4rem 4rem;
-  margin-top: 60px;
-  background-color: black;
+  justify-content: space-between;
+  padding: 3.3rem 4rem;
+  margin-top: 50px;
+  background-color: #181818;
   color: white;
+  border-bottom: 1px solid #262626;
 }
 
 /* CONTACTS */
 .contacts-block {
-  width: 520px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  padding: 1rem;
+  padding: 0 2rem;
 }
 
 .for-response {
   display: none;
+  font-weight: 500;
+  font-size: 24px;
 }
 
 .contacts-block h2 {
@@ -169,18 +170,24 @@ ol {
 }
 
 .contacts-list {
+  height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  justify-content: space-around;
+  border-bottom: 1px solid #262626;
+  padding: 1.25rem 0.30rem;
+  gap: 17px;
 }
 
 .contacts-list li {
   font-weight: 600;
+  font-size: 13px;
+  /* margin-top: 14px; */
 }
 
 .contacts-list li i {
   margin-right: 12px;
-  font-size: 18px;
+  font-size: 16px;
   color: #0F2A59;
 }
 
@@ -188,16 +195,14 @@ ol {
 
 /* FOOTER-MAP */
 .footer-map {
-  width: 50%;
-  border: 1px solid white;
+  margin-right: 34px;
 }
 
-.map {
+.footer-map .footer-map-img {
   width: 100%;
   height: 100%;
-  border: none;
+  object-fit: cover;
 }
-
 /* FOOTER-MAP-END */
 
 
