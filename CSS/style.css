@@ -120,12 +120,17 @@ ol {
 
 .burber-menu {
   display: none;
+  padding:  0.35rem 0.40rem;
+  border-radius: 50px;
+  transition: 0.3s ease-in-out;
 }
 
 .bars {
   font-size: 20px;
 }
-
+.burber-menu:hover{
+  background-color: #E8E8E8;
+}
 /* NAV END*/
 
 /* HEADER-BANNER */
@@ -168,7 +173,7 @@ ol {
 .banner-content {
   position: absolute;
   left: 12.2%;
-  top: 38.7%;
+  top: 45%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
