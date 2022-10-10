@@ -120,7 +120,7 @@ ol {
 
 .burber-menu {
   display: none;
-  padding:  0.35rem 0.40rem;
+  padding: 0.35rem 0.40rem;
   border-radius: 50px;
   transition: 0.3s ease-in-out;
 }
@@ -128,9 +128,11 @@ ol {
 .bars {
   font-size: 20px;
 }
-.burber-menu:hover{
+
+.burber-menu:hover {
   background-color: #E8E8E8;
 }
+
 /* NAV END*/
 
 /* HEADER-BANNER */
@@ -181,6 +183,7 @@ ol {
   height: 190px;
   color: white;
   padding: 4px 0;
+  z-index: 2;
 }
 
 .content-top h2 {
@@ -216,12 +219,24 @@ ol {
   color: black;
 }
 
+.banner-slider-img {
+  position: absolute;
+  right: 9.4%;
+  bottom: -4px;
+  z-index: 0;
+}
+
+.banner-slider-img img {
+  width: 100%;
+}
+
 .banner-bottom {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 23px;
   height: 10%;
+  z-index: 2;
 }
 
 .banner-bottom .slider-dots {
@@ -356,7 +371,6 @@ ol {
 
 .news-cards:hover {
   box-shadow: inset 0 100vh rgba(0, 0, 0, 0.515);
-
 }
 
 .news-cards.first {
@@ -493,6 +507,7 @@ ol {
 
 .inner-double-card.second {
   height: auto;
+  height: 380px;
   right: 0;
   left: 5.5%;
 }
@@ -589,10 +604,19 @@ ol {
   gap: 17px;
 }
 
+.contacts-list a {
+  text-decoration: none;
+  color: #F8F8F8;
+}
+
 .contacts-list li {
   font-weight: 600;
   font-size: 13px;
-  /* margin-top: 14px; */
+  transition: .2s;
+}
+
+.contacts-list li:hover {
+  color: #da372f;
 }
 
 .contacts-list li i {
@@ -633,6 +657,11 @@ ol {
 
   .list-block {
     display: none;
+  }
+
+  .banner-slider-img {
+    right: 0;
+    bottom: -8px;
   }
 
   .burber-menu {
@@ -699,6 +728,12 @@ ol {
 
 @media (max-width:768px) {
 
+  /* HEADER */
+
+  .banner-slider-img {
+    width: 500px;
+  }
+
   /* MAIN */
 
   .news-card-wrapper .news-cards {
@@ -720,7 +755,9 @@ ol {
 
   .inner-double-card {
     width: 100%;
+    height: 380px;
     position: static;
+    justify-content: space-between;
     transition: 0.3s ease-in-out;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     padding: 2rem;
@@ -728,7 +765,8 @@ ol {
 
   .double-card-content {
     width: 100%;
-    height: auto;
+    height: 100%;
+    justify-content: space-around;
   }
 
   .double-content-btn {
@@ -772,12 +810,13 @@ ol {
     display: none;
   }
 
-  .bars {
-    font-size: 22px;
+  .banner-slider-img {
+    width: auto;
+    left: 0;
   }
 
-  .banner-content {
-    top: 20%;
+  .bars {
+    font-size: 22px;
   }
 
   /* MAIN */
@@ -815,7 +854,6 @@ ol {
   .inner-double-card {
     height: 100%;
     padding: 1rem;
-    /* border: 1px solid red; */
   }
 
   /* FOOTER */
@@ -855,6 +893,10 @@ ol {
 
   .news-main-title h2 {
     font-size: 24px;
+  }
+
+  .inner-double-card.second {
+    height: auto;
   }
 }
 

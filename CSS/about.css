@@ -24,6 +24,8 @@ ol {
   background-color: white;
 }
 
+
+
 .logo {
   display: flex;
   justify-content: center;
@@ -31,6 +33,10 @@ ol {
   width: 70px;
   height: 36px;
   cursor: pointer;
+}
+
+.logo a {
+  text-decoration: none;
 }
 
 .logo h2 {
@@ -229,6 +235,7 @@ ol {
   height: 100%;
   object-fit: cover;
 }
+
 /* FOOTER-MAP-END */
 
 
