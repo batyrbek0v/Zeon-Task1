@@ -137,6 +137,7 @@ ol {
 
 /* HEADER-BANNER */
 .header-banner {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -175,7 +176,7 @@ ol {
 .banner-content {
   position: absolute;
   left: 12.2%;
-  top: 45%;
+  top: 39%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -222,7 +223,7 @@ ol {
 .banner-slider-img {
   position: absolute;
   right: 9.4%;
-  bottom: -4px;
+  bottom: 0;
   z-index: 0;
 }
 
@@ -661,7 +662,6 @@ ol {
 
   .banner-slider-img {
     right: 0;
-    bottom: -8px;
   }
 
   .burber-menu {
@@ -812,7 +812,7 @@ ol {
 
   .banner-slider-img {
     width: auto;
-    left: 0;
+    right: inherit;
   }
 
   .bars {
